@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://characters/character_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://characters/faces/mirta_legrande.svg" id="2_face"]
+[ext_resource type="Resource" path="res://abilities/data/almuerzo_con_mirta.tres" id="3_ability"]
+[ext_resource type="PackedScene" path="res://assets/kenney_mini_characters/character-female-c.glb" id="4_body"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"mirta_legrande"
+display_name = "Mirta Legrande"
+country = "Argentina"
+bio = "Diva eterna de los almuerzos televisivos. Nadie sabe su edad; ella tampoco."
+face_texture = ExtResource("2_face")
+tags = Array[StringName]([&"argentino", &"grupo_de_riesgo", &"muerte_por_edad"])
+ability = ExtResource("3_ability")
+taunts = PackedStringArray("Como te ven, te tratan.", "¿Y vos quién sos, querido?")
+max_health = 75.0
+move_speed = 4.8
+body_model = ExtResource("4_body")
+body_scale = 0.95

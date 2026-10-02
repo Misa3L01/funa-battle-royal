@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"bate"
+display_name = "Bate de Béisbol"
+description = "Lento pero empuja lejos. El golpe fuerte manda a volar."
+visual = &"bat"
+damage = 12.0
+cooldown = 0.75
+windup = 0.15
+reach = 2.0
+arc_degrees = 110.0
+knockback = 7.0
+ammo = 40
+spawn_weight = 9.0

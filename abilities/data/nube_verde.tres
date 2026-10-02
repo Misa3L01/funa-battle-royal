@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AreaEffectAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/area_effect_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/humo_verde.tres" id="3_smoke"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"nube_verde"
+display_name = "Nube Verde"
+description = "Nube de 5.5 m que marea y frena a los enemigos 3 s. Él se cura 15."
+cooldown = 14.0
+animation = &"emote-yes"
+shout = "Tranqui, tranqui..."
+bot_hint = 0
+bot_range = 5.5
+radius = 5.5
+enemy_statuses = Array[ExtResource("9_status_script")]([ExtResource("3_smoke")])
+self_heal = 15.0
+fx_color = Color(0.4, 1, 0.3, 0.6)

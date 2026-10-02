@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"punos"
+display_name = "Puños"
+description = "Lo que te dio la naturaleza. Combo de 3: el tercero es una patada."
+visual = &"fists"
+damage = 6.0
+cooldown = 0.45
+windup = 0.1
+reach = 1.5
+arc_degrees = 110.0
+knockback = 2.5
+spawn_weight = 0.0

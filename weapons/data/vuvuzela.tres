@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/ensordecido.tres" id="3_deaf"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"vuvuzela"
+display_name = "Vuvuzela"
+description = "Poco daño, mucho ruido: frena a todos los que estén delante."
+kind = 2
+visual = &"vuvuzela"
+damage = 2.0
+cooldown = 0.3
+windup = 0.0
+reach = 7.0
+arc_degrees = 50.0
+knockback = 3.0
+hit_status = ExtResource("3_deaf")
+signature_character = &"neymal"
+signature_damage_multiplier = 2.0
+signature_range_multiplier = 1.3
+signature_text = "Neymal: el doble de daño y más alcance."
+spawn_weight = 8.0

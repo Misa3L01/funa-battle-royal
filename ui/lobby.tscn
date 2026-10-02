@@ -1,0 +1,185 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://ui/lobby.gd" id="1_lobby"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.06, 0.06, 0.1, 0.86)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+content_margin_left = 16.0
+content_margin_top = 14.0
+content_margin_right = 16.0
+content_margin_bottom = 14.0
+
+[node name="Lobby" type="CanvasLayer"]
+script = ExtResource("1_lobby")
+
+[node name="Root" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="VBox" type="VBoxContainer" parent="Root"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="Root/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.25, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 40
+text = "FUNA BATTLE ROYAL"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Root/VBox"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+text = "Arena brawler de humor absurdo · hasta 10 jugadores · todos los parecidos son pura coincidencia"
+horizontal_alignment = 1
+
+[node name="Main" type="HBoxContainer" parent="Root/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 14
+
+[node name="Left" type="PanelContainer" parent="Root/VBox/Main"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.4
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Scroll" type="ScrollContainer" parent="Root/VBox/Main/Left"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="CharacterList" type="VBoxContainer" parent="Root/VBox/Main/Left/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="Right" type="PanelContainer" parent="Root/VBox/Main"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="VBox" type="VBoxContainer" parent="Root/VBox/Main/Right"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BigFace" type="TextureRect" parent="Root/VBox/Main/Right/VBox/Header"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(110, 110)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Names" type="VBoxContainer" parent="Root/VBox/Main/Right/VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="CharacterName" type="Label" parent="Root/VBox/Main/Right/VBox/Header/Names"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+
+[node name="CharacterCountry" type="Label" parent="Root/VBox/Main/Right/VBox/Header/Names"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+
+[node name="CharacterInfo" type="RichTextLabel" parent="Root/VBox/Main/Right/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="Separator" type="HSeparator" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+
+[node name="SkinRow" type="HBoxContainer" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Root/VBox/Main/Right/VBox/SkinRow"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+text = "Skin de armas"
+
+[node name="SkinOption" type="OptionButton" parent="Root/VBox/Main/Right/VBox/SkinRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BotsRow" type="HBoxContainer" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Root/VBox/Main/Right/VBox/BotsRow"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+text = "Bots"
+
+[node name="BotsSpin" type="SpinBox" parent="Root/VBox/Main/Right/VBox/BotsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 9.0
+
+[node name="AddressRow" type="HBoxContainer" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Root/VBox/Main/Right/VBox/AddressRow"]
+custom_minimum_size = Vector2(130, 0)
+layout_mode = 2
+text = "IP del host"
+
+[node name="AddressEdit" type="LineEdit" parent="Root/VBox/Main/Right/VBox/AddressRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "127.0.0.1"
+placeholder_text = "127.0.0.1"
+
+[node name="Buttons" type="HBoxContainer" parent="Root/VBox/Main/Right/VBox"]
+layout_mode = 2
+
+[node name="HostButton" type="Button" parent="Root/VBox/Main/Right/VBox/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Crear partida"
+
+[node name="JoinButton" type="Button" parent="Root/VBox/Main/Right/VBox/Buttons"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Unirse"
+
+[node name="PlayersLabel" type="Label" parent="Root/VBox/Main/Right/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Jugadores: -"
+
+[node name="StatusLabel" type="Label" parent="Root/VBox/Main/Right/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.9, 1, 1)
+autowrap_mode = 3
+
+[node name="StartButton" type="Button" parent="Root/VBox/Main/Right/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "¡ARRANCAR PARTIDA!"

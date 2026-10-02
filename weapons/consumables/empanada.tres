@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ConsumableData" format=3]
+
+[ext_resource type="Script" path="res://weapons/consumable_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"empanada"
+display_name = "Empanada"
+description = "Cura 15. De carne, cortada a cuchillo."
+heal = 15.0
+color = Color(1, 0.75, 0.35, 1)
+visual = &"empanada"
+spawn_weight = 14.0

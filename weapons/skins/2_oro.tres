@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="WeaponSkin" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_skin.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"oro"
+display_name = "Oro"
+rarity = 2
+required_kills = 50
+albedo = Color(1, 0.78, 0.25, 1)
+metallic = 1.0
+roughness = 0.25

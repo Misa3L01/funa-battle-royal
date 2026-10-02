@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BlackoutEvent" format=3]
+
+[ext_resource type="Script" path="res://events/blackout_event.gd" id="1_script"]
+
+
+[resource]
+script = ExtResource("1_script")
+id = &"apagon"
+display_name = "el Apagón"
+probability = 0.3
+duration = 35.0
+earliest_time = 50.0
+latest_time = 200.0
+warning_time = 4.0
+warning_text = "Se está por cortar la luz... (otra vez)"
+announcement = "¡APAGÓN! La luz la paga el que gane."

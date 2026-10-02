@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/siesta.tres" id="3_nap"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"siesta"
+display_name = "Siesta"
+description = "Duerme 3 s: no se mueve, pero se cura 12/s y recibe la mitad de daño."
+cooldown = 20.0
+animation = &"sit"
+shout = "Zzz... ¿dónde estoy?"
+bot_hint = 2
+bot_range = 10.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_nap")])
+fx_color = Color(0.6, 0.6, 1, 0.6)

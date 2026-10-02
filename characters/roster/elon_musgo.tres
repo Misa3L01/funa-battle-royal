@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://characters/character_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://characters/faces/elon_musgo.svg" id="2_face"]
+[ext_resource type="Resource" path="res://abilities/data/cohete_a_marte.tres" id="3_ability"]
+[ext_resource type="PackedScene" path="res://assets/kenney_mini_characters/character-male-b.glb" id="4_body"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"elon_musgo"
+display_name = "Elon Musgo"
+country = "EE.UU."
+bio = "Multimillonario de pelo musgoso. Quiere colonizar Marte; por ahora coloniza tu arena."
+face_texture = ExtResource("2_face")
+tags = Array[StringName]([])
+ability = ExtResource("3_ability")
+taunts = PackedStringArray("Funding secured.", "Te compro y te cierro.")
+max_health = 95.0
+move_speed = 6.3
+body_model = ExtResource("4_body")
+body_scale = 1.0

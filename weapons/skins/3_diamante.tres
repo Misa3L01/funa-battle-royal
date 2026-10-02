@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="WeaponSkin" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_skin.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"diamante"
+display_name = "Diamante"
+rarity = 3
+required_kills = 150
+albedo = Color(0.7, 0.95, 1, 1)
+metallic = 0.3
+roughness = 0.05
+emission = Color(0.3, 0.8, 1, 1)
+emission_energy = 0.6

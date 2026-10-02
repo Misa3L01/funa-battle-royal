@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WallAbility" format=3]
+
+[ext_resource type="Script" path="res://abilities/wall_ability.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"el_muro"
+display_name = "El Muro"
+description = "Levanta un muro de 6 m delante durante 8 s. Frena gente y proyectiles."
+cooldown = 12.0
+animation = &"interact-right"
+shout = "¡Construyan el muro!"
+bot_hint = 0
+bot_range = 8.0
+width = 6.0
+height = 3.2
+distance = 3.0
+lifetime = 8.0

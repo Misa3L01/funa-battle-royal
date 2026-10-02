@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="AreaEffectAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/area_effect_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/cadena_nacional.tres" id="3_speech"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"cadena_nacional"
+display_name = "Cadena Nacional"
+description = "Todos a 9 m quedan silenciados (sin habilidad) y lentos durante 3 s."
+cooldown = 16.0
+animation = &"emote-yes"
+shout = "Hoy voy a hablar un ratito..."
+bot_hint = 0
+bot_range = 9.0
+radius = 9.0
+enemy_statuses = Array[ExtResource("9_status_script")]([ExtResource("3_speech")])
+fx_color = Color(0.5, 0.7, 1, 0.6)

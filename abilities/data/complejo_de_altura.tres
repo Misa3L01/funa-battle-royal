@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/complejo_de_altura.tres" id="3_rage"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"complejo_de_altura"
+display_name = "Complejo de Altura"
+description = "+50% de daño y +15% de velocidad durante 5 s."
+cooldown = 14.0
+animation = &"emote-no"
+shout = "¡¿Quién dijo petiso?!"
+bot_hint = 0
+bot_range = 6.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_rage")])
+fx_color = Color(1, 0.3, 0.3, 0.6)

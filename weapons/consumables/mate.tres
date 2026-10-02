@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ConsumableData" format=3]
+
+[ext_resource type="Script" path="res://weapons/consumable_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"mate"
+display_name = "Mate"
+description = "Cura 25. Se comparte, pero acá no."
+heal = 25.0
+color = Color(0.55, 0.85, 0.35, 1)
+visual = &"mate"
+spawn_weight = 10.0

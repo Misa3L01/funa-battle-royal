@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="FoodRainEvent" format=3]
+
+[ext_resource type="Script" path="res://events/food_rain_event.gd" id="1_script"]
+[ext_resource type="Resource" path="res://weapons/consumables/empanada.tres" id="2_food"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"lluvia_empanadas"
+display_name = "la Lluvia de Empanadas"
+probability = 0.35
+consumable = ExtResource("2_food")
+count = 14
+earliest_time = 40.0
+latest_time = 180.0
+warning_time = 3.0
+warning_text = "Se nubla... huele a horno de barro."
+announcement = "¡LLUVIA DE EMPANADAS! Son de carne (confiá)."

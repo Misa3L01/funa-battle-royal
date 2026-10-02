@@ -1,0 +1,129 @@
+[gd_resource type="Resource" script_class="RivalryTable" format=3]
+
+[ext_resource type="Script" path="res://combat/rivalry_table.gd" id="1_script"]
+[ext_resource type="Script" path="res://combat/rivalry_data.gd" id="2_data"]
+
+[sub_resource type="Resource" id="r0"]
+script = ExtResource("2_data")
+display_name = "La Grieta"
+kind = 0
+character_a = &"pilei"
+character_b = &"birchner"
+damage_multiplier = 1.25
+activation_range = 12.0
+line_a = "¡Viva la libertad, carajo! Y vos... ¡AFUERA!"
+line_b = "Tomá nota, querido: esto termina en cadena nacional."
+
+[sub_resource type="Resource" id="r1"]
+script = ExtResource("2_data")
+display_name = "Revancha Electoral"
+kind = 0
+character_a = &"tromp"
+character_b = &"joe_bidet"
+damage_multiplier = 1.25
+activation_range = 12.0
+line_a = "¡Fraude! ¡Esta pelea está arreglada!"
+line_b = "Escuchame, jack... ¿quién sos vos?"
+
+[sub_resource type="Resource" id="r2"]
+script = ExtResource("2_data")
+display_name = "Bromance Nuclear"
+kind = 1
+character_a = &"tromp"
+character_b = &"kim_jong_dos"
+damage_multiplier = 0.75
+activation_range = 12.0
+line_a = "Kim, mi botón es más grande que el tuyo."
+line_b = "El mío brilla. Mirá... ups."
+
+[sub_resource type="Resource" id="r3"]
+script = ExtResource("2_data")
+display_name = "Guerra Comercial"
+kind = 0
+character_a = &"tromp"
+character_b = &"xi_pingpong"
+damage_multiplier = 1.2
+activation_range = 12.0
+line_a = "¡Chaina! ¡Aranceles del 500%!"
+line_b = "Ping. Te devuelvo el arancel."
+
+[sub_resource type="Resource" id="r4"]
+script = ExtResource("2_data")
+display_name = "Colusión"
+kind = 1
+character_a = &"pupin"
+character_b = &"tromp"
+damage_multiplier = 0.8
+activation_range = 12.0
+line_a = "Donald, amigo. ¿Un tecito?"
+line_b = "¡No lo vi nunca en mi vida!"
+
+[sub_resource type="Resource" id="r5"]
+script = ExtResource("2_data")
+display_name = "El Muro"
+kind = 0
+character_a = &"tromp"
+character_b = &"amlol"
+damage_multiplier = 1.25
+activation_range = 12.0
+line_a = "¡Y el muro lo pagás vos!"
+line_b = "Abrazos, no balazos... pero a vos, una chancla."
+
+[sub_resource type="Resource" id="r6"]
+script = ExtResource("2_data")
+display_name = "Dupla del PSG"
+kind = 1
+character_a = &"neymal"
+character_b = &"pessi"
+damage_multiplier = 0.8
+activation_range = 12.0
+line_a = "¡Hermano! ¡Me pegaron!"
+line_b = "Levantate, no te tocó nadie."
+
+[sub_resource type="Resource" id="r7"]
+script = ExtResource("2_data")
+display_name = "Invierno Ruso"
+kind = 0
+character_a = &"pupin"
+character_b = &"napoleon_bonsai"
+damage_multiplier = 1.25
+activation_range = 12.0
+line_a = "¿Trajiste abrigo, petiso?"
+line_b = "¡No fue mi altura, fue la nieve!"
+
+[sub_resource type="Resource" id="r8"]
+script = ExtResource("2_data")
+display_name = "Club de la Tercera Edad"
+kind = 1
+character_a = &"mirta_legrande"
+character_b = &"joe_bidet"
+damage_multiplier = 0.8
+activation_range = 12.0
+line_a = "¿Almorzamos, querido?"
+line_b = "¿Ya es la hora de la siesta?"
+
+[sub_resource type="Resource" id="r9"]
+script = ExtResource("2_data")
+display_name = "Funding Secured"
+kind = 1
+character_a = &"elon_musgo"
+character_b = &"smoke_dogg"
+damage_multiplier = 0.8
+activation_range = 12.0
+line_a = "Funding secured, bro."
+line_b = "Tranqui, hermano. Pasame el puro."
+
+[sub_resource type="Resource" id="r10"]
+script = ExtResource("2_data")
+display_name = "Pacifistas Armados"
+kind = 1
+character_a = &"albert_zweistein"
+character_b = &"mahatma_gandy"
+damage_multiplier = 0.8
+activation_range = 12.0
+line_a = "¿Y si no nos pegamos?"
+line_b = "Ojo por ojo y quedamos todos tuertos."
+
+[resource]
+script = ExtResource("1_script")
+entries = Array[ExtResource("2_data")]([SubResource("r0"), SubResource("r1"), SubResource("r2"), SubResource("r3"), SubResource("r4"), SubResource("r5"), SubResource("r6"), SubResource("r7"), SubResource("r8"), SubResource("r9"), SubResource("r10")])

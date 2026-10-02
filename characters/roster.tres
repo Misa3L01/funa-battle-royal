@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="CharacterRoster" format=3]
+
+[ext_resource type="Script" path="res://characters/character_roster.gd" id="1_script"]
+[ext_resource type="Script" path="res://characters/character_data.gd" id="2_data"]
+[ext_resource type="Resource" path="res://characters/roster/pessi.tres" id="c0"]
+[ext_resource type="Resource" path="res://characters/roster/pilei.tres" id="c1"]
+[ext_resource type="Resource" path="res://characters/roster/birchner.tres" id="c2"]
+[ext_resource type="Resource" path="res://characters/roster/mirta_legrande.tres" id="c3"]
+[ext_resource type="Resource" path="res://characters/roster/tromp.tres" id="c4"]
+[ext_resource type="Resource" path="res://characters/roster/joe_bidet.tres" id="c5"]
+[ext_resource type="Resource" path="res://characters/roster/smoke_dogg.tres" id="c6"]
+[ext_resource type="Resource" path="res://characters/roster/elon_musgo.tres" id="c7"]
+[ext_resource type="Resource" path="res://characters/roster/pupin.tres" id="c8"]
+[ext_resource type="Resource" path="res://characters/roster/kim_jong_dos.tres" id="c9"]
+[ext_resource type="Resource" path="res://characters/roster/xi_pingpong.tres" id="c10"]
+[ext_resource type="Resource" path="res://characters/roster/amlol.tres" id="c11"]
+[ext_resource type="Resource" path="res://characters/roster/neymal.tres" id="c12"]
+[ext_resource type="Resource" path="res://characters/roster/napoleon_bonsai.tres" id="c13"]
+[ext_resource type="Resource" path="res://characters/roster/albert_zweistein.tres" id="c14"]
+[ext_resource type="Resource" path="res://characters/roster/mahatma_gandy.tres" id="c15"]
+
+[resource]
+script = ExtResource("1_script")
+characters = Array[ExtResource("2_data")]([ExtResource("c0"), ExtResource("c1"), ExtResource("c2"), ExtResource("c3"), ExtResource("c4"), ExtResource("c5"), ExtResource("c6"), ExtResource("c7"), ExtResource("c8"), ExtResource("c9"), ExtResource("c10"), ExtResource("c11"), ExtResource("c12"), ExtResource("c13"), ExtResource("c14"), ExtResource("c15")])

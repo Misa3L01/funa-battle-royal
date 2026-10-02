@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+[ext_resource type="Script" path="res://weapons/projectile_spec.gd" id="2_spec"]
+[ext_resource type="Resource" path="res://combat/statuses/aturdido.tres" id="3_stun"]
+[ext_resource type="Resource" path="res://combat/statuses/chanclazo.tres" id="4_sig"]
+
+[sub_resource type="Resource" id="Resource_slipper"]
+script = ExtResource("2_spec")
+visual = &"slipper"
+speed = 20.0
+gravity = 12.0
+radius = 0.3
+lifetime = 2.5
+damage = 11.0
+knockback = 5.0
+hit_status = ExtResource("3_stun")
+spin = 3.0
+
+[resource]
+script = ExtResource("1_script")
+id = &"chancla"
+display_name = "La Chancla"
+description = "El arma más temida de Latinoamérica. Aturde un instante."
+kind = 1
+rarity = 1
+visual = &"slipper"
+cooldown = 0.8
+projectile = SubResource("Resource_slipper")
+spread_degrees = 3.0
+signature_character = &"mirta_legrande"
+signature_damage_multiplier = 1.6
+signature_hit_status = ExtResource("4_sig")
+signature_text = "Mirta: +60% daño y chanclazo de 1 segundo."
+spawn_weight = 9.0

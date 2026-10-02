@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/recortado.tres" id="3_sig"]
+[ext_resource type="Resource" path="res://combat/statuses/motosierra_pesada.tres" id="4_heavy"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"motosierra"
+display_name = "Motosierra"
+description = "Corta todo: árboles, gastos y personas."
+rarity = 3
+visual = &"chainsaw"
+damage = 4.0
+cooldown = 0.15
+windup = 0.03
+reach = 1.8
+arc_degrees = 90.0
+knockback = 1.0
+ammo = 120
+signature_character = &"pilei"
+signature_damage_multiplier = 1.5
+signature_range_multiplier = 1.2
+signature_hit_status = ExtResource("3_sig")
+non_signature_damage_multiplier = 0.75
+non_signature_held_status = ExtResource("4_heavy")
+signature_text = "Pilei: +50% daño y recorte presupuestario. Otros: pesa y pega menos."
+spawn_weight = 3.0

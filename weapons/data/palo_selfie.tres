@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="WeaponData" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_data.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"palo_selfie"
+display_name = "Palo de Selfie"
+description = "El que más lejos llega cuerpo a cuerpo. Te funa en 4K."
+visual = &"selfie_stick"
+damage = 8.0
+cooldown = 0.55
+windup = 0.15
+reach = 2.8
+arc_degrees = 70.0
+knockback = 4.0
+ammo = 50
+spawn_weight = 10.0

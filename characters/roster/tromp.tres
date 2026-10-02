@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://characters/character_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://characters/faces/tromp.svg" id="2_face"]
+[ext_resource type="Resource" path="res://abilities/data/el_muro.tres" id="3_ability"]
+[ext_resource type="PackedScene" path="res://assets/kenney_mini_characters/character-male-d.glb" id="4_body"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"tromp"
+display_name = "Donald Tromp"
+country = "EE.UU."
+bio = "Magnate, showman y dueño del botón rojo más grande. Construye muros, pero nunca sabe dónde terminan."
+face_texture = ExtResource("2_face")
+tags = Array[StringName]([&"potencia_nuclear", &"grupo_de_riesgo"])
+ability = ExtResource("3_ability")
+taunts = PackedStringArray("¡Estás despedido!", "Nadie funa mejor que yo. Nadie.")
+max_health = 110.0
+move_speed = 5.8
+body_model = ExtResource("4_body")
+body_scale = 1.05

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/abrazos_no_balazos.tres" id="3_hug"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"abrazos_no_balazos"
+display_name = "Abrazos, no balazos"
+description = "Inmune a proyectiles durante 5 s y se cura 10."
+cooldown = 15.0
+animation = &"emote-yes"
+shout = "¡Abrazos, no balazos!"
+bot_hint = 2
+bot_range = 14.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_hug")])
+heal = 10.0
+fx_color = Color(0.5, 1, 0.6, 0.6)

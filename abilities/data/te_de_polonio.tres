@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="ProjectileAbility" format=3]
+
+[ext_resource type="Script" path="res://abilities/projectile_ability.gd" id="1_script"]
+[ext_resource type="Script" path="res://weapons/projectile_spec.gd" id="2_spec"]
+[ext_resource type="Resource" path="res://combat/statuses/envenenado.tres" id="3_poison"]
+
+[sub_resource type="Resource" id="Resource_tea"]
+script = ExtResource("2_spec")
+visual = &"teacup"
+speed = 18.0
+gravity = 10.0
+radius = 0.3
+lifetime = 2.5
+damage = 6.0
+knockback = 2.0
+hit_status = ExtResource("3_poison")
+spin = 1.5
+
+[resource]
+script = ExtResource("1_script")
+id = &"te_de_polonio"
+display_name = "Té de Polonio"
+description = "Tira una taza de té: 6 de daño y veneno (4/s durante 6 s)."
+cooldown = 9.0
+animation = &"interact-right"
+shout = "¿Un tecito?"
+bot_hint = 1
+bot_range = 16.0
+projectile = SubResource("Resource_tea")

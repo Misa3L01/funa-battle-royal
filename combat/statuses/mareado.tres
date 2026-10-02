@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatusEffect" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"mareado"
+display_name = "Mareado"
+color = Color(0.6, 1, 0.4, 1)
+duration = 1.2
+flags = 64
+damage_per_second = 0.0
+heal_per_second = 0.0
+move_speed_multiplier = 1.0
+damage_dealt_multiplier = 1.0
+damage_taken_multiplier = 1.0

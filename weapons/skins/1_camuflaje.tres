@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="WeaponSkin" format=3]
+
+[ext_resource type="Script" path="res://weapons/weapon_skin.gd" id="1_script"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"camuflaje"
+display_name = "Camuflaje"
+rarity = 1
+required_kills = 10
+albedo = Color(0.33, 0.42, 0.22, 1)
+roughness = 0.85

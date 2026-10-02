@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/huelga_de_hambre.tres" id="3_strike"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"huelga_de_hambre"
+display_name = "Huelga de Hambre"
+description = "4 s sin atacar: recibe 80% menos de daño y se cura 8/s."
+cooldown = 18.0
+animation = &"sit"
+shout = "No como hasta ganar."
+bot_hint = 2
+bot_range = 12.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_strike")])
+fx_color = Color(1, 1, 1, 0.6)

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="DashAbility" format=3]
+
+[ext_resource type="Script" path="res://abilities/dash_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/gambeta.tres" id="3_dodge"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"gambeta"
+display_name = "Gambeta"
+description = "Dash rápido e invulnerable. Esquiva golpes, balas y bombas."
+cooldown = 6.0
+animation = &"attack-kick-right"
+shout = ""
+bot_hint = 3
+bot_range = 14.0
+speed = 15.0
+duration = 0.35
+self_status = ExtResource("3_dodge")

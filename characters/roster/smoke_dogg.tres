@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterData" format=3]
+
+[ext_resource type="Script" path="res://characters/character_data.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://characters/faces/smoke_dogg.svg" id="2_face"]
+[ext_resource type="Resource" path="res://abilities/data/nube_verde.tres" id="3_ability"]
+[ext_resource type="PackedScene" path="res://assets/kenney_mini_characters/character-male-a.glb" id="4_body"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"smoke_dogg"
+display_name = "Smoke Dogg"
+country = "EE.UU."
+bio = "Rapero, chef y filósofo del relax. Siempre anda en una nube."
+face_texture = ExtResource("2_face")
+tags = Array[StringName]([])
+ability = ExtResource("3_ability")
+taunts = PackedStringArray("Tranqui, hermano.", "Fo shizzle.")
+max_health = 95.0
+move_speed = 6.2
+body_model = ExtResource("4_body")
+body_scale = 1.05

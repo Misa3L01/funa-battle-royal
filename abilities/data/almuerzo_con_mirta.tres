@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/almorzando.tres" id="3_lunch"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"almuerzo_con_mirta"
+display_name = "Almuerzo con Mirta"
+description = "Se sienta a almorzar: cura 10 al instante y 12/s durante 3 s, pero se mueve lento."
+cooldown = 18.0
+animation = &"emote-yes"
+shout = "¿Qué comemos hoy, querido?"
+bot_hint = 2
+bot_range = 10.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_lunch")])
+heal = 10.0
+fx_color = Color(1, 0.8, 0.5, 0.6)

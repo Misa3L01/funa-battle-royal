@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ConsumableData" format=3]
+
+[ext_resource type="Script" path="res://weapons/consumable_data.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/vacunado.tres" id="2_status"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"vacuna"
+display_name = "Vacuna"
+description = "Cura el COVID, el veneno y el mareo. Después recibís 10% menos de daño un rato."
+heal = 5.0
+cures_negative = true
+status = ExtResource("2_status")
+color = Color(0.5, 0.85, 1, 1)
+visual = &"vaccine"
+spawn_weight = 5.0

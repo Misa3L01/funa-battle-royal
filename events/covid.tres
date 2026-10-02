@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DiseaseEvent" format=3]
+
+[ext_resource type="Script" path="res://events/disease_event.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/covid.tres" id="2_status"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"covid"
+display_name = "el COVID"
+target_tag = &"grupo_de_riesgo"
+probability = 0.4
+status = ExtResource("2_status")
+earliest_time = 30.0
+latest_time = 150.0
+warning_time = 5.0
+warning_text = "Alguien tosió sin taparse la boca..."
+announcement = "¡Llegó la pandemia!"

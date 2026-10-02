@@ -1,0 +1,70 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://arena/arena.gd" id="1_arena"]
+[ext_resource type="Script" path="res://map/island_generator.gd" id="2_island"]
+[ext_resource type="Script" path="res://map/inflation_zone.gd" id="3_zone"]
+[ext_resource type="PackedScene" path="res://ui/lobby.tscn" id="4_lobby"]
+[ext_resource type="PackedScene" path="res://ui/hud.tscn" id="5_hud"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_sky"]
+sky_top_color = Color(0.3, 0.55, 0.9, 1)
+sky_horizon_color = Color(0.72, 0.85, 0.95, 1)
+ground_bottom_color = Color(0.1, 0.3, 0.45, 1)
+ground_horizon_color = Color(0.72, 0.85, 0.95, 1)
+
+[sub_resource type="Sky" id="Sky_main"]
+sky_material = SubResource("ProceduralSkyMaterial_sky")
+
+[sub_resource type="Environment" id="Environment_main"]
+background_mode = 2
+sky = SubResource("Sky_main")
+ambient_light_source = 3
+ambient_light_sky_contribution = 0.55
+tonemap_mode = 3
+tonemap_white = 6.0
+ssao_enabled = true
+glow_enabled = true
+glow_intensity = 0.4
+fog_enabled = true
+fog_light_color = Color(0.72, 0.84, 0.95, 1)
+fog_density = 0.0007
+adjustment_enabled = true
+adjustment_saturation = 1.2
+
+[node name="Arena" type="Node3D"]
+script = ExtResource("1_arena")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_main")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-50, 35, 0)
+light_energy = 1.2
+shadow_enabled = true
+directional_shadow_max_distance = 90.0
+
+[node name="Island" type="Node3D" parent="."]
+script = ExtResource("2_island")
+
+[node name="Zone" type="Node3D" parent="."]
+script = ExtResource("3_zone")
+
+[node name="OverviewCamera" type="Camera3D" parent="."]
+position = Vector3(0, 60, 115)
+current = true
+fov = 60.0
+far = 900.0
+
+[node name="Players" type="Node3D" parent="."]
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="PlayerSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("../Players")
+
+[node name="WorldSpawner" type="MultiplayerSpawner" parent="."]
+spawn_path = NodePath("../World")
+
+[node name="Lobby" parent="." instance=ExtResource("4_lobby")]
+
+[node name="HUD" parent="." instance=ExtResource("5_hud")]

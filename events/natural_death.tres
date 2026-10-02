@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="NaturalDeathEvent" format=3]
+
+[ext_resource type="Script" path="res://events/natural_death_event.gd" id="1_script"]
+
+
+[resource]
+script = ExtResource("1_script")
+id = &"natural_death"
+display_name = "causas naturales"
+target_tag = &"muerte_por_edad"
+probability_per_character = 0.15
+earliest_time = 30.0
+latest_time = 300.0
+warning_time = 0.0
+announcement = "Causas naturales. Nadie lo vio venir (todos lo vimos venir)."

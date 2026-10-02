@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="DiveAbility" format=3]
+
+[ext_resource type="Script" path="res://abilities/dive_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/piscinazo.tres" id="3_dive"]
+[ext_resource type="Resource" path="res://combat/statuses/tarjeta_amarilla.tres" id="4_card"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"piscinazo"
+display_name = "Piscinazo"
+description = "Se tira al piso: invulnerable 1.3 s y tarjeta amarilla (aturde 1.5 s) a quienes le pegaron en los últimos 3 s."
+cooldown = 10.0
+animation = &"die"
+shout = "¡AAAY, MI TOBILLO!"
+bot_hint = 2
+bot_range = 8.0
+self_status = ExtResource("3_dive")
+punish_status = ExtResource("4_card")
+memory_seconds = 3.0

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="SelfBuffAbility" format=3]
+
+[ext_resource type="Script" path="res://combat/status_effect.gd" id="9_status_script"]
+[ext_resource type="Script" path="res://abilities/self_buff_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/ping_pong.tres" id="3_pong"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"ping_pong"
+display_name = "Ping Pong"
+description = "Durante 2.5 s devuelve todos los proyectiles al que los tiró."
+cooldown = 12.0
+animation = &"attack-melee-right"
+shout = "Ping."
+bot_hint = 2
+bot_range = 14.0
+statuses = Array[ExtResource("9_status_script")]([ExtResource("3_pong")])
+fx_color = Color(1, 0.35, 0.35, 0.6)

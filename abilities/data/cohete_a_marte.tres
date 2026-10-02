@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="SuperJumpAbility" format=3]
+
+[ext_resource type="Script" path="res://abilities/super_jump_ability.gd" id="1_script"]
+[ext_resource type="Resource" path="res://combat/statuses/aturdido.tres" id="3_stun"]
+
+[resource]
+script = ExtResource("1_script")
+id = &"cohete_a_marte"
+display_name = "Cohete a Marte"
+description = "Súper salto hacia adelante. Al caer: 25 de daño en 4.5 m y aturde."
+cooldown = 12.0
+animation = &"jump"
+shout = "¡A Marte!"
+bot_hint = 3
+bot_range = 20.0
+jump_velocity = 13.0
+forward_speed = 8.0
+slam_radius = 4.5
+slam_damage = 25.0
+slam_knockback = 12.0
+slam_status = ExtResource("3_stun")

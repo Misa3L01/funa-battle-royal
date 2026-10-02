@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="NuclearStrikeEvent" format=3]
+
+[ext_resource type="Script" path="res://events/nuclear_strike_event.gd" id="1_script"]
+
+
+[resource]
+script = ExtResource("1_script")
+id = &"nuclear_strike"
+display_name = "el Ataque Nuclear"
+trigger_tag = &"potencia_nuclear"
+probability_by_count = Array[float]([0.0, 0.25, 0.5, 0.8, 0.9])
+damage = 60.0
+bunker_multiplier = 0.1
+earliest_time = 60.0
+latest_time = 240.0
+warning_time = 10.0
+warning_text = "¡ALERTA NUCLEAR! Alguien se sentó arriba del botón rojo.\nImpacto en 10 segundos: ¡corran a un búnker!"
+announcement = "Ataque nuclear. Nadie aprendió nada."
